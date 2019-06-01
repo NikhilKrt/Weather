@@ -24,23 +24,23 @@ app.use(express.static(publicDirectory));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather app',
-        name: 'Raj Darbar'
+        name: 'Nikhil Krt'
     });
 });
 
 app.get('/help' , (req, res) => {
     res.render('help', {
         helpText: 'This here for help',
-        title: 'Help title',
-        name: 'Naduu'
+        title: 'Help ',
+        name: 'Nikhil Krt'
        
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'Ablout page',
-        name: 'Nikrit me'
+        title: 'Ablout ',
+        name: 'Nikhil Krt'
     });
 });
 
@@ -83,7 +83,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404' , {
         title: '404',
-        name:'Nikhil',
+        name:'Nikhil Krt',
         errorMessage: 'Help artical not found'
     });
 });
@@ -91,7 +91,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404 ERROR',
-        name: 'Nikhil',
+        name: 'Nikhil Krt',
         errorMessage: 'Page not found'
     });
 });
